@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma com Formulário</title>
+</head>
+
+<body>
+
+    <h3> Soma de dois números </h3>
+
+    <!--Definição de area de dois números-->
+    <form name="MenuFormulario" action=" " method="post">
+        Entre com o valor 1: <input type="text" name="f_1"/> <p></p>
+        Entre com o valor 2: <input type="text" name="f_2"/> <p></p>
+        <input type="button" name="btn_somar" value="somar" onclick="soma()"/>
+        <input type="reset" name="btn_apagar" value="Apagar" />
+    </form>
+    <!--final da area do formulario -->
+
+    <!-- Definição da linguagem-->
+    <script language="javascript">
+
+    /*definição das variaveis*/
+     var f_1;
+     var f_2;
+     var js_soma;
+     /*definição da função soma */
+
+     function soma(){
+        /*entrada de dados*/
+        f_1 = parseInt(document.MenuFormulario.f_1.value);
+        f_2 = parseInt(document.MenuFormulario.f_2.value);
+
+        /*Processamento de Dados*/
+        js_soma = f_1 + f_2;
+
+        /*saida dos dados*/
+
+        window.alert(' Resultado do somatorio é = ' +  js_soma.toString());
+
+     }
+</script>
+</body>
+</html>
